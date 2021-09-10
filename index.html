@@ -1,38 +1,49 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="utf-8">
     <title>Chifoumi en Javascript</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <script src="script.js"></script>
 </head>
+
 <body>
 
     <h1>Chifoumi</h1>
 
-    <div class="columns">
-        <div id="player">
-            <h3>Score :</h3>
-            <div class="buttons">
-                <button class="buttonChoice">PIERRE</button>
-                <button class="buttonChoice">FEUILLE</button>
-                <button class="buttonChoice">CISEAUX</button>
-            </div>
-        </div> 
+    <div class="gridDisplay">
+        <!--Player part-->
+        <button class="buttons" id="buttonRockPlayer"><img src="assets/img/rock.png"></button>
+        <button class="buttons" id="buttonPaperPlayer"><img src="assets/img/paper.png"></button>
+        <button class="buttons" id="buttonScissorsPlayer"><img src="assets/img/scissors.png"></button>
 
-        <div id="countdown">
-    
-        </div>
 
-        <div id="computer">
-            <h3>Score :</h3>
-            <div class="buttons">
-                <button class="buttonChoice" disabled>PIERRE</button>
-                <button class="buttonChoice" disabled>FEUILLE</button>
-                <button class="buttonChoice" disabled>CISEAUX</button>
-            </div>
-        </div>
+        <div id="player">Player</div>
+
+        <div id="playerChoice">TEST</div>
+
+        <div id="playerScore">10</div>
+
+        <div id="separation"></div>
+
+        <!--Computer part-->
+        <button class="buttons" id="buttonRockComputer"><img src="assets/img/rock.png" disabled></button>
+        <button class="buttons" id="buttonPaperComputer"><img src="assets/img/paper.png"></button>
+        <button class="buttons" id="buttonScissorsComputer"><img src="assets/img/scissors.png"></button>
+
+
+        <div id="computer">Computer</div>
+
+        <div id="computerChoice">TEST</div>
+
+        <div id="computerScore">0</div>
+
     </div>
-   
+
 </body>
+
 </html>

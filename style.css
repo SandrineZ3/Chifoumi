@@ -1,12 +1,98 @@
-.columns {
-    width: 100%;
+* {
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+
+}
+
+/* Setting my grid */
+.gridDisplay {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     grid-gap: 10px;
-    grid-auto-rows: minmax(100px, auto);
-
+    grid-auto-rows: minmax(200px, auto);
 }
 
-.buttons {
-    display: inline;
+/* Computer part */
+#buttonRockPlayer {
+    grid-column: 1;
+    grid-row: 2;
 }
+
+#buttonPaperPlayer {
+    grid-column: 1;
+    grid-row: 4;
+}
+
+#buttonScissorsPlayer {
+    grid-column: 1;
+    grid-row: 6;
+}
+
+#player {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+#playerChoice {
+    grid-column: 3;
+    grid-row: 3 / 5;
+}
+
+#playerScore {
+    grid-column: 4;
+    grid-row: 1;
+}
+
+#separation {
+    grid-column: 5;
+    grid-row: 1 / 7;
+    background-color: darkblue;
+}
+
+/* Computer part */
+#buttonRockComputer {
+    grid-column: 9;
+    grid-row: 2;
+}
+
+#buttonPaperComputer {
+    grid-column: 9;
+    grid-row: 4;
+}
+
+#buttonScissorsComputer {
+    grid-column: 9;
+    grid-row: 6;
+}
+
+#computer {
+    grid-column: 7;
+    grid-row: 1;
+}
+
+#computerChoice {
+    grid-column: 7;
+    grid-row: 3 / 5;
+}
+
+#computerScore {
+    grid-column: 6;
+    grid-row: 1;
+}
+
+/* Autre */
+.buttons img{
+    max-width: 100px;
+    max-height: 110px;
+}
+
+.buttonChoice:hover {
+    cursor: pointer;
+}
+
+#countdown {
+    background-color: black;
+    width: 10px;
+}
+

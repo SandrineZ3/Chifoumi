@@ -51,13 +51,13 @@ body {
     margin: auto;
 }
 
-#playerChoice {
+#playerChoiceDisplayed {
     grid-column: 3;
     grid-row: 3 / 5;
     margin: auto;
 }
 
-#playerScore {
+#playerScoreDisplayed {
     grid-column: 4;
     grid-row: 1;
     margin: auto;
@@ -97,14 +97,14 @@ body {
     margin: auto;
 }
 
-#computerChoice {
+#computerChoiceDisplayed {
     grid-column: 7;
     grid-row: 3 / 5;
     margin: auto;
 
 }
 
-#computerScore {
+#computerScoreDisplayed {
     grid-column: 6;
     grid-row: 1;
     margin: auto;

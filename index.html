@@ -31,7 +31,7 @@
         <div id="win" class="displayNone">Tu as gagné !</div>
         <div id="lose" class="displayNone">Tu as perdu !</div>
 
-        <button id="playAgain" class="displayNone">Rejouer !</button>
+        <button id="playAgain" class="displayNone"><p>Rejouer !</p></button>
 
         <!--Computer part-->
         <button class="buttons" id="buttonRockComputer" disabled><img src="assets/img/rock.png"></button>
@@ -43,11 +43,12 @@
         <div id="computerChoiceDisplayed">?</div>
 
         <div id="computerScoreDisplayed">_</div>
-
     </div>
-    <audio src="assets/audio/hoverSound.flac" id="hoverSound"></audio>
+
     <audio src="assets/audio/selectSound.wav" id="selectSound"></audio>
+    <audio src="assets/audio/winSound.wav" id="winSound"></audio>
+    <audio src="assets/audio/loseSound.wav" id="loseSound"></audio>
+
     <script src="script.js"></script>
 </body>
-
 </html>

@@ -73,10 +73,10 @@ function updateScores() {
 function endOfGame() {
     if(computerScore == 5) {
         document.getElementById("lose").className = "displayResult";
-        /* son de defaite playLose(); */
+        playLose();
     } else if(playerScore == 5) {
         document.getElementById("win").className = "displayResult";
-        /* son de victoire playWin(); */
+        playWin();
     }
     document.getElementsByName("playerButton").forEach(e => {
         e.disabled = true; });
@@ -88,26 +88,25 @@ function newGame() {
 }
 
 
-
-
-
+/* Sound functions */
 function playClick() {
     let audio = document.getElementById("selectSound");
     audio.volume = 0.3;
     audio.play();
 }
 
+function playWin() {
+    let audio = document.getElementById("winSound");
+    audio.volume = 0.3;
+    audio.play();
+}
 
+function playLose() {
+    let audio = document.getElementById("loseSound");
+    audio.volume = 0.3;
+    audio.play();
+}
 
-
-/*let buttons = document.getElementsByName('playerButton'); // on récupère l'élément qui sera survolé pour jouer le son
-let hoverSound = document.getElementById('hoverSound'); // on récupère l'élément <audio>
- 
-buttons.onmouseover = function(){ // lorsque le div est survolé
-    hoverSound.volume = 1;
-    hoverSound.play(); // on joue le son
-    console.log("sonnn ici");
-};*/
 
 
 

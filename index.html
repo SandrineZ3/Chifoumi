@@ -11,12 +11,11 @@
 </head>
 
 <body>
-
     <h1>Chifoumi</h1>
 
     <div class="gridDisplay">
         <!--Player part-->
-        <button class="buttons" id="buttonRockPlayer" name="playerButton" onclick="playClick()" ><img src="assets/img/rock.png"></button>
+        <button class="buttons" id="buttonRockPlayer" name="playerButton" onclick="playClick()"><img src="assets/img/rock.png"></button>
         <button class="buttons" id="buttonPaperPlayer" name="playerButton" onclick="playClick()"><img src="assets/img/paper.png"></button>
         <button class="buttons" id="buttonScissorsPlayer" name="playerButton" onclick="playClick()"><img src="assets/img/scissors.png"></button>
 
@@ -31,7 +30,9 @@
         <div id="win" class="displayNone">Tu as gagné !</div>
         <div id="lose" class="displayNone">Tu as perdu !</div>
 
-        <button id="playAgain" class="displayNone"><p>Rejouer !</p></button>
+        <button id="playAgain" class="displayNone">
+            <p>Rejouer !</p>
+        </button>
 
         <!--Computer part-->
         <button class="buttons" id="buttonRockComputer" disabled><img src="assets/img/rock.png"></button>
@@ -51,4 +52,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>

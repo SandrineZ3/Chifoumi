@@ -1,4 +1,4 @@
-# Chifoumi
+# Chifoumi - projet personnel
 
 ### _Mini-jeu du Pierre-Feuille-Ciseaux réalisé en Javascript_ :new_moon: :page_facing_up: :scissors:
 
